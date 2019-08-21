@@ -9,6 +9,7 @@ function ArtistSearch({ text, textHandler, submitHandler }) {
         value={text} 
         placeholder="search.." 
         onChange={textHandler} /> 
+      <button>Search</button>
     </form>
   );
 } 
