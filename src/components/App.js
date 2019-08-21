@@ -1,6 +1,6 @@
 import React from 'react';
+import Artist from './artist/Artist';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <Artist name="Nirvana" id="12345" />;
 }
-  
