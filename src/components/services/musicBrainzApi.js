@@ -25,3 +25,17 @@ export const getAlbums = (id) => {
       return res.json();
     });
 };
+
+export const getSongs = (id) => {
+  return fetch(`http://musicbrainz.org/ws/2/recording?release=${id}&fmt=json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then(res => {
+      if(!res.ok) throw 'Could not get albums';
+
+      return res.json();
+    });
+};
