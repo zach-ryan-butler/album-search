@@ -1,21 +1,8 @@
 import React from 'react';
 import Artists from './artist/Artists';
+import ArtistSearch from './search/ArtistSearch';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export default function App() {
-  const artistArr = [
-    {
-      name: 'bob',
-      id: '123'
-    },
-    {
-      name: 'zach',
-      id: '456'
-    },
-    {
-      name: 'bill',
-      id: '989'
-    }
-  ];
-
-  return <Artists artists={artistArr} />;
+  return <ArtistSearch text="Nirvana" />;
 }
