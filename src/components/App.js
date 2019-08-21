@@ -1,6 +1,21 @@
 import React from 'react';
-import Artist from './artist/Artist';
+import Artists from './artist/Artists';
 
 export default function App() {
-  return <Artist name="Nirvana" id="12345" />;
+  const artistArr = [
+    {
+      name: 'bob',
+      id: '123'
+    },
+    {
+      name: 'zach',
+      id: '456'
+    },
+    {
+      name: 'bill',
+      id: '989'
+    }
+  ];
+
+  return <Artists artists={artistArr} />;
 }
