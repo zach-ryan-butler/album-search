@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function List({ arr, Comp }) {
   const artistList = arr.map(obj => (
     <li key={obj.id}>
-      <Comp props={obj} />
+      <Comp obj={obj} />
     </li>
   ));
 
