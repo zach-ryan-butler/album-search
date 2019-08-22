@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Song component renders Song 1`] = `
+<section>
+  <Link
+    to="/lyrics/some name/some album/some title/some id"
+  >
+    some title
+  </Link>
+</section>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist Component renders Artist 1`] = `
+<section>
+  <Link
+    to="/albums/my name/my id"
+  >
+    my name
+  </Link>
+</section>
+`;

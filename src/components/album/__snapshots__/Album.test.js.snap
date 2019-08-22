@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album component renders Album 1`] = `
+<section
+  className="Album"
+>
+  <Link
+    to="/songs/my name/my title/some id"
+  >
+    my title
+  </Link>
+  <img
+    src="http://coverartarchive.org/release/some id/front"
+  />
+</section>
+`;
