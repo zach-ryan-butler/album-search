@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Artist({ props }) {
+function Artist({ obj }) {
   return (
     <section>
-      <Link to={`/albums/${props.name}/${props.id}`}>{props.name}</Link>
+      <Link to={`/albums/${obj.name}/${obj.id}`}>{obj.name}</Link>
     </section>
   );
 }
 
 Artist.propTypes = {
-  props: PropTypes.object.isRequired,
-  name: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+  obj: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired
+  }).isRequired,
 };
 
 export default Artist;
