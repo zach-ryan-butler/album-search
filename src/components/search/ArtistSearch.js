@@ -2,6 +2,7 @@ import React from 'react';
 import PropType from 'prop-types';
 
 function ArtistSearch({ text, textHandler, submitHandler }) {
+
   return (
     <form onSubmit={submitHandler}>
       <input
@@ -9,7 +10,7 @@ function ArtistSearch({ text, textHandler, submitHandler }) {
         value={text} 
         placeholder="search.." 
         onChange={textHandler} /> 
-      <button>Search</button>
+      <button disabled={text === ''}>Search</button>
     </form>
   );
 } 
