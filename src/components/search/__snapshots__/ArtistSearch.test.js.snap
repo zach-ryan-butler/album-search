@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistSearch component renders ArtistSearch 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="search.."
+    type="text"
+    value="some text"
+  />
+  <button
+    disabled={false}
+  >
+    Search
+  </button>
+</form>
+`;
