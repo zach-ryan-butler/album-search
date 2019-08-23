@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 
 function Pagination({ pageUp, pageDown, totalPages, page }) {
   const initialPage = totalPages === 0 ? page - 1 : page;
-  const disablePageDown = page <= 1;
-  const disabledPageUp = page >= totalPages;
 
   return (
     <>
-      <button disabled={disablePageDown} onClick={pageDown}>←</button>
+      <button disabled={page === 1} onClick={pageDown}>←</button>
       <span>page {initialPage} of {totalPages}</span>
-      <button disabled={disabledPageUp} onClick={pageUp}>→</button>
+      <button disabled={page === totalPages} onClick={pageUp}>→</button>
     </>
   );
 }
